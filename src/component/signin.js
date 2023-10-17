@@ -16,7 +16,7 @@ export const LogIn = function () {
     const username = usernameRef.current.value;
     const password = passwordRef.current.value;
     const resp = await axios.post(
-      "http://localhost:5000/authenticateUser",
+      "https://login-app-api-ha8r.onrender.com/authenticateUser",
       {
         username,
         password,
